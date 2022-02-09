@@ -18,6 +18,13 @@ public class Util {
 
         public void format(String cnpj){}
 
+        public void clear(Map<String,String> mapCnpj){
+                for(String key : mapCnpj.keySet()){ {
+                    mapCnpj.put(key, clear(mapCnpj.get(key)));
+                }
+            }
+        }
+
         public void clear(List<String> lstCnpj){
             for (Integer i = 0; i < lstCnpj.size(); i++) {
                 lstCnpj.set(i, clear(lstCnpj.get(i)));    
