@@ -14,13 +14,13 @@ public class Util {
             return null;
         }
 
-        public String format(String cnpj){
-            return null;
-        }
+        public void format(List<String> cnpj){}
 
-        public String clear(String cnpj){
-            return null;
-        }
+        public void format(String cnpj){}
+
+        public void clear(List<String> lstCnpj){}
+
+        public void clear(String cnpj){}
 
     }
 
@@ -30,13 +30,13 @@ public class Util {
             return null;
         }
 
-        public String format(String cpf){
-            return null;
-        }
+        public void format(List<String> lstCpf){}
 
-        public String clear(String cnpj){
-            return null;
-        }
+        public void format(String cpf){}
+
+        public void clear(List<String> lstCpf){}
+
+        public void clear(String cnpj){}
 
     }
     
