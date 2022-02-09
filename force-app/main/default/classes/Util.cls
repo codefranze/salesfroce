@@ -18,10 +18,15 @@ public class Util {
 
         public void format(String cnpj){}
 
-        public void clear(List<String> lstCnpj){}
+        public void clear(List<String> lstCnpj){
+            for (Integer i = 0; i < lstCnpj.size(); i++) {
+                lstCnpj.set(i, clear(lstCnpj.get(i)));    
+            }
+        }
 
-        public void clear(String cnpj){}
-
+        public String clear(String cnpj){
+           return cnpj.replaceAll('[^\\d]','');
+        }
     }
 
     public class Cpf{
